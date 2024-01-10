@@ -1,0 +1,38 @@
+body{
+  background: #18442F;
+  font-family: 'Times New Roman';
+  position: relative;
+}
+
+#imagem{
+  width: 1500px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1200px;
+  place-content: center;
+}
+#imagem-start{
+  height: 625px;
+  max-width: 100%;
+  place-self: center;
+  border-radius: 1rem;
+}
+
+.start-button{
+  height: 30px;
+  width: 90px;
+  position: absolute;
+  left: 685px;
+  bottom: 150px;
+  background: #18442F;
+  padding: 20px;
+  border-radius: 1rem;
+}
+.start-button a{
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  color: #E8E8E8;
+
+}
+

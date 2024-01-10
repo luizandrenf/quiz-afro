@@ -1,0 +1,164 @@
+body{
+  background: #18442F;
+  font-family: 'Times New Roman';
+  position: relative;
+  margin: 0;
+}
+
+.game-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  gap: 30px;
+  margin: 30px;
+}
+
+ .pergunta{
+  height: 200px;
+  text-align: center;
+  background: #e7e7e7;
+  grid-column: 1/-1;
+  border-radius: 1rem;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+ }
+
+
+ .respostas{
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  margin: 0;
+  gap: 20px;
+  height: 100px;
+ }
+
+
+.alternativa{
+  background: #e7e7e7;
+  width: 450px;
+  height: 50px;
+  border-radius: 1rem;
+  padding: 10px;
+  place-self: center;
+  font-size: 20px;
+ }
+
+ .alternativa:disabled{
+  cursor: not-allowed;
+  color: #e7e7e7;
+ }
+
+ .hide{
+  display: none;
+ }
+
+button{
+  cursor: pointer;
+}
+
+.menu{
+  position: absolute;
+  top: 75px;
+  left: 270px;
+  width: 1000px;
+  height: 500px;
+  background: #ECECEC;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  gap: 30px;
+  place-content: center;
+  border-radius: 1rem;
+
+}
+
+.menu h1{
+  color: #5B3C2F;
+  font-size: 60px;
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+
+h2{
+  font-size: 40px;
+}
+
+.start-quiz{
+  color: #F1F1F2;
+  background: #18442F;
+  position: relative;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 1rem;
+  left: 460px;
+  width: 100px;
+  text-align: center;
+}
+
+.hide{
+  display: none;
+}
+
+.button{
+  font-size: 16px;
+  border: 0;
+  border-radius: 6px;
+  
+}
+.button:not(:disabled):hover{
+  filter: brightness(0.8);
+}
+
+.pergunta{
+padding: 20px;
+}
+
+.correct{
+  background: #049b48;
+}
+
+.incorrect{
+  background: #a10101;
+}
+
+.next-question{
+  grid-column: 2;
+  place-self: end;
+  font-size: 20px;
+}
+
+.end-game{
+  grid-column: 1/-1;
+  padding: 30px;
+  background: #e7e7e7;
+  place-self: center;
+  display: grid;
+  width: 100vh;
+}
+
+.message{
+  grid-column: 1/-1;
+  place-self: center;
+}
+
+.refazer{
+  padding: 20px;
+  place-self: center;
+  color: #e7e7e7;
+  background: #18442F;
+  width: 200px
+}
+
+.temporizador {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  background: #ECECEC;
+  width: 150px;
+  height: 5px;
+  padding: 20px;
+  border-radius: 6px;
+}
